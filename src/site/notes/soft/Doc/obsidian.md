@@ -14,7 +14,7 @@
 [[soft/Doc/obsidian/Plugin/advanced-tables Plugin\|advanced-tables Plugin]]
 [[dataview/dataview Plugin\|dataview Plugin]]
 [[soft/Doc/obsidian/Plugin/emoji Plugin\|emoji Plugin]]
-[[calibre web 和Annotator \|calibre web 和Annotator ]]
+[[calibre web And Annotator \|calibre web And Annotator ]]
 [[soft/Doc/obsidian/Plugin/Footnote shortcut Plugin\|Footnote shortcut Plugin]]
 [[soft/Doc/obsidian/Plugin/Workplace Plus Plugin\|Workplace Plus Plugin]]
 [[soft/Doc/obsidian/Plugin/obsidian Customizable Menu Plugin\|obsidian Customizable Menu Plugin]]
