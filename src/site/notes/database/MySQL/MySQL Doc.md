@@ -1,6 +1,9 @@
 ---
-{"author":"aming","email":"jikcheng@163.com","title":"MySQL Doc","creation_date":"2022-06-27 15:57","Last modified date":"2022-11-27 19:09","tags":"MySQL Doc","File Folder with relative path":"database/MySQL","remark":null,"other":null,"dg-publish":true,"permalink":"/database/my-sql/my-sql-doc/","dgPassFrontmatter":true}
+{"author":"aming","email":"jikcheng@163.com","title":"MySQL Doc","creation_date":"2022-06-27 15:57","Last modified date":"2022-12-12 15:08","tags":"MySQL Doc","File Folder with relative path":"database/MySQL","remark":null,"other":null,"dg-publish":true,"permalink":"/database/my-sql/my-sql-doc/","dgPassFrontmatter":true}
 ---
+
+
+
 
 
 ##  MySQL Introduction 
@@ -16,7 +19,6 @@
 [[database/MySQL/Doc/MySQL administration/Session TimeOut\|会话超时设置]]
 [[database/MySQL/Doc/MySQL administration/Mysql MAC Role\|用户登录时配置对应角色]]
 [[database/MySQL/Doc/MySQL administration/init_connect set User Initialize the settings\|用户登陆时配置对应参数]]
-
 
 ### Log Manager
 [[database/MySQL/Doc/MySQL administration/MySQL error Log\|MySQL 错误日志管理]]
@@ -40,21 +42,20 @@
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/Memory Performance Tuning\|Memory Performance Tuning]]
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/File Location parameter\|File Location parameter]]
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/Function parameter\|Function parameter]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库存储引擎管理\|数据库存储引擎管理]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库表参数\|数据库表参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/事物参数\|事物参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/配置文件定义\|配置文件定义]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/密码管理参数\|密码管理参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/临时表参数\|临时表参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/连接参数\|连接参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/代理用户参数\|代理用户参数]]
-### MySQL 常用数据字典
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Storage engine parameter\|Storage engine parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Case sensitive\|Case sensitive]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Transaction parameter\|Transaction parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Password parameter\|Password parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Temp Table Parameter\|Temp Table Parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Connect Parameter\|Connect Parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Proxy Parameter\|Proxy Parameter]]
+### MySQL dictionary
 [[database/MySQL/Doc/MySQL catalog/information_schema.tables\|information_schema.tables]]
 [[database/MySQL/Doc/MySQL catalog/information_schema.statistics\|information_schema.statistics]]
-### MySQL 安全
-[[database/MySQL/Doc/MySQL administration/MySQL security/回话连接次数控制插件\|回话连接次数控制插件]]
-[[database/MySQL/Doc/MySQL administration/MySQL security/使用MySQL创建SSL和RSA证书和密钥\|使用MySQL创建SSL和RSA证书和密钥]]
-[[database/MySQL/Doc/MySQL administration/MySQL security/配置MySQL使用加密连接\|配置MySQL使用加密连接]]
+### MySQL security 
+[[database/MySQL/Doc/MySQL administration/MySQL security/MySQL User Connect attemp refuse\|MySQL User Connect attemp refuse]]
+[[database/MySQL/Doc/MySQL administration/MySQL security/MySQL Use SSL RSA Certificates\|MySQL Use SSL RSA Certificates]]
+[[database/MySQL/Doc/MySQL administration/MySQL security/MySQL Configer SSL Connect\|MySQL Configer SSL Connect]]
 ### Mysql optimize 
 [[database/MySQL/Doc/MySQL optimize/SQL 解析计划\|SQL 解析计划]]
 [[database/MySQL/Doc/MySQL optimize/order by 调优经验\|order by 调优经验]]
@@ -68,7 +69,7 @@
 [[database/MySQL/Doc/MySQL administration/DNS 解析 和Host Cache\|DNS 解析 和Host Cache]]
 [[database/MySQL/Doc/MySQL administration/开启大页内存\|开启大页内存]]
 [[database/MySQL/Doc/MySQL optimize/RDA MySQL 信息收集工具使用\|RDA MySQL 信息收集工具使用]]
-## MySQL 命令
+## MySQL Command 
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/mysqldump 最佳实践\|mysqldump 最佳实践]]
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/mysqldump 命令行说明\|mysqldump 命令行说明]]
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/mysqldump 技巧点\|mysqldump 技巧点]]
@@ -77,7 +78,7 @@
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/MySQL服务端和启动程序\|MySQL服务端和启动程序]]
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/MySQL 客户端程序\|MySQL 客户端程序]]
 [[database/MySQL/Doc/MySQL administration/MySQL CMD/MySQL 安装相关程序\|MySQL 安装相关程序]]
-## MySQL 常用SQL
+## MySQL Common SQL
 [[database/MySQL/Doc/MySQL common SQL/TPS_QPS_cache_查看\|TPS_QPS_cache_查看]]
 [[database/MySQL/Doc/MySQL common SQL/TOP SQL\|TOP SQL]]
 [[database/MySQL/Doc/MySQL common SQL/selecct 导出数据\|selecct 导出数据]]
