@@ -29,17 +29,17 @@
 [[database/MySQL/Doc/MySQL Tablespaces/Increase the ibddata Tablespace\| MySQL 系统表空间]]
 [[database/MySQL/Doc/MySQL Tablespaces/Normal Tablespaces\| MySQL 普通表空间]]
 ### MySQL Parameter
-[[database/MySQL/Doc/MySQL administration/Use system variables\|Use system variables]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/SQL Performance tuning parameters\|SQL Performance tuning parameters]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/big_table 参数\|big_table 参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/信息参数\|信息参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/系统日志管理参数\|系统日志管理参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/系统变量分类\|系统变量分类]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/索引参数\|索引参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库字符集参数\|数据库字符集参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库性能调优参数\|数据库性能调优参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库文件管理参数\|数据库文件管理参数]]
-[[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库功能参数\|数据库功能参数]]
+[[database/MySQL/Doc/MySQL administration/Use system variables\|系统变量使用]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/SQL Performance tuning parameters\|性能调优参数]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/big_table parameter\|big_table 参数]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/hostname parameter\| hostname 参数]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/sys log manager parameter\|sys log manager parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/System variables category\|System variables category]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Index Paramter\|Index Paramter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Character Set Parameter\|Character Set Parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Memory Performance Tuning\|Memory Performance Tuning]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/File Location parameter\|File Location parameter]]
+[[database/MySQL/Doc/MySQL administration/MySQL parameter/Function parameter\|Function parameter]]
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库存储引擎管理\|数据库存储引擎管理]]
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/数据库表参数\|数据库表参数]]
 [[database/MySQL/Doc/MySQL administration/MySQL parameter/事物参数\|事物参数]]
@@ -147,9 +147,10 @@
 ## MySQL Stream 
 [[database/MySQL/Doc/MySQL Stream/MySQL5.7.12 Base GTID Stream\|MySQL5.7.12 Base GTID Stream]]
 [[database/MySQL/Doc/MySQL Stream/MySQL5.7.12 Base Logseq Stream\|MySQL5.7.12 Base Logseq Stream]]
+
 [[database/MySQL/Doc/MySQL Stream/Change binlog format For MySQL Stream\|Change binlog format For MySQL Stream]]
 [[database/MySQL/Doc/MySQL Stream/MySQL Stream Skip error\|MySQL Stream Skip error]]
-[[database/MySQL/Doc/MySQL Stream/MySQL 流复制常用命令\|MySQL 流复制常用命令]]
+[[database/MySQL/Doc/MySQL Stream/MySQL Stram Ignore Table\|MySQL Stram Ignore Table]]
 
-## other
+## MySQL Object
 - [[database/MySQL/Doc/MySQL administration/Mysql sequence\|Mysql sequence]]
