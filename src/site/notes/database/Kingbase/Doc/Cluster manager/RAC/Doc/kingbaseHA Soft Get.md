@@ -7,10 +7,9 @@
 
 
 ## 绿色版安装包部署
-```ad-warning
-以下命令都为root 用户执行。
-以下命令所有节点都需执行。
-```
+> [!warning]
+> 以下命令都为root 用户执行。
+> 以下命令所有节点都需执行。
 
 
 ### 获取安装包方式
@@ -34,11 +33,10 @@ cd /opt
 tar -zcvf  KingbaseHA.tar.gz /opt/KingbaseHA
 ```
 
-```ad-warning
-不同版本的KingbaseHA 生成方式都不同，详情参考[官方文档](https://help.kingbase.com.cn/v8/highly/Clusterware/clusterware/index.html)。
-1. 必须使用root 用户。
-2. 必须使用`./rootDeployClusterware.sh`这种方式生成。
-```
+> [!warning]
+> 不同版本的KingbaseHA 生成方式都不同，详情参考[官方文档](https://help.kingbase.com.cn/v8/highly/Clusterware/clusterware/index.html)。
+> 1. 必须使用root 用户。
+> 2. 必须使用`./rootDeployClusterware.sh`这种方式生成。
 ### 上传安装包并部署
 ```bash
 cd /opt
