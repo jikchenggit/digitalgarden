@@ -25,9 +25,8 @@
 | **Default Value**         | `OFF`                           |
 
 
-```ad-note
-说明:角色管理.
-```
+> [!note]
+> 说明:角色管理.
 
 此参数在版本8.0.2引入，是一个可以动态调整的global级参数，默认值为OFF。此参数用于控制在账户登录时是否激活已经授予的角色，如果为ON则授予的角色会被激活，设置为OFF时只能通过SET DEFAULT ROLE显式激活用户角色。activate_all_roles_on_login设置只在账户登录或者开始执行存储过程时生效，如果想更改session的role需要执行SET ROLE语句。
 
@@ -52,9 +51,8 @@
 
 
 
-```ad-note
-说明:权限管理
-```
+> [!note]
+> 说明:权限管理
 该参数控制着server是否自动分配execute和alter权限给创建routine的用户。 默认为1，自动赋权
 ##  认证功能参数
 ###  [`auto_generate_certs`]
@@ -70,9 +68,8 @@
 | **Default Value**         | `ON`                               |
 
 
-```ad-note
-说明:链接认证管理
-```
+> [!note]
+> 说明:链接认证管理
 
 
 自动认证:当服务启动后服务程序会自动产生server ,client 认证文件,不需要再指定-ssl 选项
@@ -141,9 +138,8 @@ For wolfSSL, permitted mode values are: ECB, CBC
 | **Maximum Value**         | `65535`          |
 
 
-```ad-note
-说明:连接数管理
-```
+> [!note]
+> 说明:连接数管理
 
 baklog 选项适用于在非常短的时间内有大量连接.进行指定有多少连接可以进来.
 
@@ -216,9 +212,8 @@ sysctl -p
 | **Default Value**         | `*`                   |
 
 
-```ad-note
-说明:监听管理
-```
+> [!note]
+> 说明:监听管理
 
 
 此选项为,是在哪个网络接口上进行网络监听.
@@ -242,9 +237,8 @@ sysctl -p
 | **Default Value** (>= 8.0.1) | `utf8mb4`                |
 | **Default Value** (8.0.0)    | `utf8`                   |
 
-```ad-note
-说明:连接字符集管理
-```
+> [!note]
+> 说明:连接字符集管理
 
 数据库客户端默认字符集
 
@@ -278,9 +272,8 @@ sysctl -p
 | **Default Value** (>= 8.0.1) | `utf8mb4`                 |
 | **Default Value** (8.0.0)    | `utf8`                    |
 
-```ad-note
-说明:查询结果字符集
-```
+> [!note]
+> 说明:查询结果字符集
 
 
 
@@ -347,9 +340,8 @@ sysctl -p
 | **Default Value**         | `ON`                                   |
 
 
-```ad-note
-对于密码过期的用户连接:
-```
+> [!note]
+> 对于密码过期的用户连接:
 
 对于密码过期的用户登录:
 - 如果客户端表明了过期用户的过期密码,则允许连接到一个沙盒环境.
@@ -371,9 +363,8 @@ sysctl -p
 | **[SET_VAR]Hint Applies** | No                    | 
 | **Type**                  | string                |
 
-```ad-note
-说明:连接初始化
-```
+> [!note]
+> 说明:连接初始化
 
 
 初始化连接时,所执行的命令.命令为字符串.字符串里有一个或者多个命令.使用`;` 分割.例如:自动提交在比较老的服务器上是禁用的(MySQL 5.5.8之前).使用init_connect 可以达到同样的效果.
@@ -394,9 +385,8 @@ sysctl -p
 | **Minimum Value**         | `1`                       |
 
 
-```ad-note
- MySQL 关闭交互式链接所等待的秒数.
-```
+> [!note]
+>  MySQL 关闭交互式链接所等待的秒数.
 
 
 
@@ -417,9 +407,8 @@ sysctl -p
 | **Maximum Value**         | `31536000`            |
 
 
-```ad-note
-说明:连接等待时间.
-```
+> [!note]
+> 说明:连接等待时间.
 
 
 mysql客户端在尝试与mysql服务器建立连接时，mysql服务器返回错误握手协议前等待客户端数据包的最大时限。默认10秒。
