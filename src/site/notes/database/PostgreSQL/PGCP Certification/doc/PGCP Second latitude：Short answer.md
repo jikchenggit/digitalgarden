@@ -325,9 +325,8 @@ postgres> vi $PGDATA/postgresql.conf
 
 ```
 
-```ad-warning
-删除 `restore_command` 和`recovery_target_timeline`这两个参数，防止下次数据恢复的时候会有参数冲突。
-```
+> [!warning]
+> 删除 `restore_command` 和`recovery_target_timeline`这两个参数，防止下次数据恢复的时候会有参数冲突。
 ![EXAM11-01|700](https://www.aming.work:8084/images/2022/11/24/EXAM11-01.png)
 ![EXAM11-02|700](https://www.aming.work:8084/images/2022/11/24/EXAM11-02.png)
 
@@ -358,14 +357,13 @@ EOF
 ```
 
 
-```ad-warning
-取出时间点
-            now              
-------------------------------
- 2022-11-23 21:50:31.70569-05
-(1 row)
-
-```
+> [!warning]
+> 取出时间点
+>             now              
+> ------------------------------
+>  2022-11-23 21:50:31.70569-05
+> (1 row)
+> 
 
 2. 停止数据库
 ```bash
@@ -447,15 +445,13 @@ INFO: ARCLOG_PATH is set to '/home/postgres/arch'
 INFO: SRVLOG_PATH is set to '/usr/local/pg12.2/data/log'
 ```
 4. 查看初始化后的文件。
-```ad-note
-ls $BACKUP_PATH/*
-```
+> [!note]
+> ls $BACKUP_PATH/*
 
 
-```ad-warning
-特别注意：在备份前请手动清除postgresql.conf中的restore_command、recovery_target_time、recovery_target_timeline等参数
-
-```
+> [!warning]
+> 特别注意：在备份前请手动清除postgresql.conf中的restore_command、recovery_target_time、recovery_target_timeline等参数
+> 
 #### PG_RAMN备份
 1.  PG_RMAN 全备份
 ```bash
@@ -520,10 +516,9 @@ EOF
 psql testdb -c 'table t01';
 ```
 
-```ad-warning
-
-注意：$PGDATA/pg_wal下的日志文件不能丢失，否则要做不完全恢复
-```
+> [!warning]
+> 
+> 注意：$PGDATA/pg_wal下的日志文件不能丢失，否则要做不完全恢复
 ![EXAM14-01|700](https://www.aming.work:8084/images/2022/11/24/EXAM14-01.png)
 ![EXAM14-02|700](https://www.aming.work:8084/images/2022/11/24/EXAM14-02.png)
 ![EXAM14-03|700](https://www.aming.work:8084/images/2022/11/24/EXAM14-03.png)
@@ -551,13 +546,12 @@ insert into t02 values(1);
 EOF
 ```
 
-```ad-note
-
-              now              
--------------------------------
- 2022-11-26 03:07:02.611232-05
-
-```
+> [!note]
+> 
+>               now              
+> -------------------------------
+>  2022-11-26 03:07:02.611232-05
+> 
 
 5. 清除数据文件
 ```bash
@@ -585,11 +579,10 @@ select * from t02;
 eof
 ```
 
-```ad-warning
-4. 前滚redo log语句暂时就不需要了 ，因为指定了`recovery-target-action` ，自动恢复到指定的时间点。
-`select pg_wal_replay_resume();`
-注意：$PGDATA/pg_wal下的日志文件不能丢失，否则要做不完全恢复
-```
+> [!warning]
+> 4. 前滚redo log语句暂时就不需要了 ，因为指定了`recovery-target-action` ，自动恢复到指定的时间点。
+> `select pg_wal_replay_resume();`
+> 注意：$PGDATA/pg_wal下的日志文件不能丢失，否则要做不完全恢复
 
 ![EXAM15-01|700](https://www.aming.work:8084/images/2022/11/24/EXAM15-01.png)
 ![EXAM15-02|700](https://www.aming.work:8084/images/2022/11/24/EXAM15-02.png)
