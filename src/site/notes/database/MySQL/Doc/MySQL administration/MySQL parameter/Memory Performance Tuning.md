@@ -46,9 +46,8 @@ mysql> show variables like '%optimizer_trace%';
 ```
 
 
-```ad-note
- enabled=on 说明调优器打开的,one_line=off,如果是ON 则会以JSON 方式存储数据.但是比较难于查看.
-```
+> [!note]
+>  enabled=on 说明调优器打开的,one_line=off,如果是ON 则会以JSON 方式存储数据.但是比较难于查看.
 
 
 6. 打开one_line 
@@ -87,10 +86,9 @@ select * from information_schema.OPTIMIZER_TRACE\G;
 | **Default Value**         | `OFF`     |
 如果 此变量打开为`ON`,服务将会把所有每个执行过的sql 立刻写入磁盘.如果是OFF,mysql 调用操作系统接口进行数据写入.
 
-```ad-note
-如果flush 参数enable,fulsh_time 则在对系统无任何影响.
-
-```
+> [!note]
+> 如果flush 参数enable,fulsh_time 则在对系统无任何影响.
+> 
 
 ###  [`flush_time`]
 
@@ -111,10 +109,9 @@ select * from information_schema.OPTIMIZER_TRACE\G;
 如果设置这个参数未非0值,所有表将等待 N 秒写入所有未同步flush 数据到磁盘上,此选项最好在资源少的系统上使用.
 
 
-```ad-note
-如果flush 参数enable,fulsh_time 则在对系统无任何影响.
-
-```
+> [!note]
+> 如果flush 参数enable,fulsh_time 则在对系统无任何影响.
+> 
 
 
 ###  [`host_cache_size`]
