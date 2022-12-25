@@ -16,10 +16,9 @@
 CentOS-Base.repo  CentOS-CR.repo  CentOS-Debuginfo.repo  CentOS-fasttrack.repo  CentOS-Media.repo  CentOS-Sources.repo  CentOS-Vault.repo
 ```
 
-```ad-warning
-
-默认配置即可.
-```
+> [!warning]
+> 
+> 默认配置即可.
 
 ## 允许虚拟机连接互联网
 ### 编辑网卡配置文件
