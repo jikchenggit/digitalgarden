@@ -70,9 +70,8 @@ disabled_storage_engines="MyISAM,FEDERATED"
 
 
 
-```ad-note
-说明:临时表的存储引擎.
-```
+> [!note]
+> 说明:临时表的存储引擎.
 
 磁盘上内存临时表的存储引擎.默认为MyISAM 和 INNODB.
 
@@ -98,9 +97,8 @@ disabled_storage_engines="MyISAM,FEDERATED"
 
 
 
-```ad-note
-说明:临时表的存储引擎.
-```
+> [!note]
+> 说明:临时表的存储引擎.
 
 临时表使用内存或者TempTale 存储引擎.
 
