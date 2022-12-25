@@ -22,11 +22,10 @@
 | VPN流量出设备NAT为 | 公网140.238.41.64                   | 
 
 
-```ad-warning
-以下操作都需要使用root 用户进行操作， 所以需要切换到root 用户。
-sudo su - root
-
-```
+> [!warning]
+> 以下操作都需要使用root 用户进行操作， 所以需要切换到root 用户。
+> sudo su - root
+> 
 
 # 操作系统准备
 ##  关闭SElinux
@@ -64,9 +63,8 @@ gpgcheck=1
 enabled=1
 ```
 
-```ad-warning
-enabled=1
-```
+> [!warning]
+> enabled=1
 
 ###  安装所需依赖包
 ```bash
