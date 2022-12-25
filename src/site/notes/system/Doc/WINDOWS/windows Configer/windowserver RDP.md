@@ -9,7 +9,6 @@
 ## 证书过期怎么办？
 [云服务器 Windows 实例：没有远程桌面授权服务器可以提供许可证-故障处理-文档中心-腾讯云 (tencent.com)](https://cloud.tencent.com/document/product/213/41509)
 
-```ad-warning
-非生产的windows server 无需配置证书，配置证书后反而会因为过期无法使用。
-
-```
+> [!warning]
+> 非生产的windows server 无需配置证书，配置证书后反而会因为过期无法使用。
+> 
