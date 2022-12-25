@@ -30,9 +30,8 @@
 tp.date.now(arg1_value, arg2_value, arg3_value, ...)
 ```
 
-```ad-warning
-所有参数传入顺序要正确。
-```
+> [!warning]
+> 所有参数传入顺序要正确。
 
 参数拥有不同的类型，以下列出了常见的参数类型。
 
