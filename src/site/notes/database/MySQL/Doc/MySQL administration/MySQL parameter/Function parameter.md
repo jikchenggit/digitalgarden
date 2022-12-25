@@ -300,12 +300,11 @@ documentation for more details).
 
 
 
-```ad-note
-设置foreign_key_checks=1 不会触发表扫描,因此可以追加rows 到表中.
-设置foreign_key_checks=0 不会验证约束有效性.
-设置foreign_key_checks=1 时,删除一个外键所需要的索引时,是不被允许的.
-设置foreign_key_checks=0 时,要删除索引,必须先要删除外键约束.
-```
+> [!note]
+> 设置foreign_key_checks=1 不会触发表扫描,因此可以追加rows 到表中.
+> 设置foreign_key_checks=0 不会验证约束有效性.
+> 设置foreign_key_checks=1 时,删除一个外键所需要的索引时,是不被允许的.
+> 设置foreign_key_checks=0 时,要删除索引,必须先要删除外键约束.
 # 7. 表达式功能
 ## 7.1. [`ft_boolean_syntax`]
 
