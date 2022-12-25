@@ -25,10 +25,9 @@ smcPresent = true
 custom.vgz     false   39106488 B
 ```
 
-```ad-warning
-
-smcPresent = true 则表明开启成功。
-```
+> [!warning]
+> 
+> smcPresent = true 则表明开启成功。
 
 ## 安装过程
 1. 下载ISO
@@ -47,9 +46,8 @@ sudo /Library/Application\\ Support/VMware\\ Tools/vmware-resolutionSet  1920 1
 ```
 
 [^1] 参考《VMware虚拟机更改Mac系统的屏幕分辨率》
-```ad-warning
-目前优化很烂，根本无法使用，大家考虑清楚在安装。
-
-```
+> [!warning]
+> 目前优化很烂，根本无法使用，大家考虑清楚在安装。
+> 
 
 [^1]: [[VMware虚拟机]更改Mac系统的屏幕分辨率 - 简书 (jianshu.com)](https://www.jianshu.com/p/c19e120347c4)
