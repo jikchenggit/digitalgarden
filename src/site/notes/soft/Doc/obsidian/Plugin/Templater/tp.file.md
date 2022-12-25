@@ -26,9 +26,8 @@ tp.file.create_new(template: TFile ⎮ string, filename?: string, open_new: bool
 - folder: 创建新文件默认的存储位置，如果没有指定则是obsidian 的默认位置[^1]。
 - open_new: 是否打开新创建的文件。
 - template: 创建新文件所使用的字符串和内容，如果要使用模板，使用tp.file_tfile(TEMPLATENAME) 进行检索
-```ad-warning
-如果你开启此选项，由于命令执行是异步的。因此文件可以先打开，然后将其他命令追加到新文件而不是以前的文件。
-```
+> [!warning]
+> 如果你开启此选项，由于命令执行是异步的。因此文件可以先打开，然后将其他命令追加到新文件而不是以前的文件。
 - template：使用哪个模板作为新文件的内容。
 
 [^1]: [tp.file - Templater (silentvoid13.github.io)](https://silentvoid13.github.io/Templater/internal-functions/internal-modules/file-module.html#tpfilecreate_newtemplate-tfile--string-filename-string-open_new-boolean--false-folder-tfolder)
