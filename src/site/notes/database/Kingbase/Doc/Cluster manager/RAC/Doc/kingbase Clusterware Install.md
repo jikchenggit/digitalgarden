@@ -98,13 +98,12 @@ password="kingbase"
 ping_gateway="192.168.10.1"
 ```
 全部配置请参见 ![[cluster_manager.sh]]
-```ad-warning
-磁盘每次格式化后，都需要重新取UUID。
-[root@node1 ~]#  blkid /dev/sdc
-/dev/sdc: UUID="9c7d9e17-ebc5-435c-84c9-44b32ae87d9e" BLOCK_SIZE="512" TYPE="xfs"
-[root@node1 ~]# blkid /dev/sdb
-/dev/sdb: UUID="ab5b1a90-8762-48d3-a00a-46729d208c74" BLOCK_SIZE="512" TYPE="xfs"
-```
+> [!warning]
+> 磁盘每次格式化后，都需要重新取UUID。
+> [root@node1 ~]#  blkid /dev/sdc
+> /dev/sdc: UUID="9c7d9e17-ebc5-435c-84c9-44b32ae87d9e" BLOCK_SIZE="512" TYPE="xfs"
+> [root@node1 ~]# blkid /dev/sdb
+> /dev/sdb: UUID="ab5b1a90-8762-48d3-a00a-46729d208c74" BLOCK_SIZE="512" TYPE="xfs"
 
 #### 初始化决策盘
 ```bash
@@ -189,13 +188,12 @@ ping_gateway="192.168.10.1"
 ```
 全部配置请参见 ![[cluster_manager.sh]]
 
-```ad-warning
-磁盘每次格式化后，都需要重新取UUID。
-[root@node1 ~]#  blkid /dev/sdc
-/dev/sdc: UUID="9c7d9e17-ebc5-435c-84c9-44b32ae87d9e" BLOCK_SIZE="512" TYPE="xfs"
-[root@node1 ~]# blkid /dev/sdb
-/dev/sdb: UUID="ab5b1a90-8762-48d3-a00a-46729d208c74" BLOCK_SIZE="512" TYPE="xfs"
-```
+> [!warning]
+> 磁盘每次格式化后，都需要重新取UUID。
+> [root@node1 ~]#  blkid /dev/sdc
+> /dev/sdc: UUID="9c7d9e17-ebc5-435c-84c9-44b32ae87d9e" BLOCK_SIZE="512" TYPE="xfs"
+> [root@node1 ~]# blkid /dev/sdb
+> /dev/sdb: UUID="ab5b1a90-8762-48d3-a00a-46729d208c74" BLOCK_SIZE="512" TYPE="xfs"
 
 
 
@@ -783,10 +781,9 @@ database=test
 ```
 ### crm 配置资源
 
-```ad-warning
-1、以下操作，只需在某一台机器上执行
-
-```
+> [!warning]
+> 1、以下操作，只需在某一台机器上执行
+> 
 #### 配置fenceing1 资源
 针对于fence 配置有两种模式：
 1、VMWARE ESXI 环境。
@@ -804,10 +801,9 @@ crm configure primitive fence_node1_ipmi stonith:fence_ipmilan params ipaddr=nod
 crm configure primitive fence_node2_ipmi stonith:fence_ipmilan params ipaddr=node2 login=root  passwd="kingbase.123" pcmk_host_list=node2  lanplus=true ipmitool_path=/opt/KingbaseHA/ipmi_tool/bin/ipmitool op monitor interval=60s meta failure-timeout=5min
 ```
 
-```ad-warning
-如果配置有误，请使用以下命令删除对应fence 资源。
-crm configure delete fence_node1_ipmi
-```
+> [!warning]
+> 如果配置有误，请使用以下命令删除对应fence 资源。
+> crm configure delete fence_node1_ipmi
 
 2、[[database/Kingbase/Doc/Cluster manager/RAC/Doc/kingbase RAC 集群--部署手册#^frvdb9o3sam\|执行如下命令，添加 fence_node1_ipmi 和 fence_node2_ipmi 的 location 约束。]]
 
@@ -818,20 +814,18 @@ crm configure location fence_node1_ipmi-on-node2 fence_node1_ipmi 1000: node2
 crm configure location fence_node2_ipmi-on-node1 fence_node2_ipmi 1000: node1
 ```
 
-```ad-warning
-这是啥意思
-？
-
-```
+> [!warning]
+> 这是啥意思
+> ？
+> 
 
 
 3、测试是否能够重启
 ```bash
 fence_ipmilan -a 192.168.10.225 -l root -p 'kingbase.123' -P  --ipmitool-path=/opt/KingbaseHA/ipmi_tool/bin/ipmitool -o reboot
 ```
-```ad-warning
-测试未成功，返回错误：`2022-10-31 13:23:34,476 ERROR: Connection timed out`
-```
+> [!warning]
+> 测试未成功，返回错误：`2022-10-31 13:23:34,476 ERROR: Connection timed out`
 #### 添加VIP 1资源
 ```bash
 crm configure primitive FIP0 ocf:heartbeat:IPaddr2 \
@@ -922,10 +916,9 @@ meta failure-timeout=5min
 crm configure clone CLONE-PINGD PINGD
 ```
 #### 添加DB1资源
-```ad-warning
-
-这里所有的数据库命令全部要替换。
-```
+> [!warning]
+> 
+> 这里所有的数据库命令全部要替换。
 
 ```
 crm configure primitive DB1 ocf:kingbase:kingbase \
