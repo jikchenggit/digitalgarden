@@ -80,15 +80,14 @@ Pacemaker是一种高可用性集群资源管理器[^8] [^9]
 （8）支持高级服务类型：支持克隆和容器化服务。
 （8）提供统一的，简单的集群管理工具。
 
-```ad-note
-隔离（Fencing）[^13]，也被称为STONITH (Shoot The Other Node In The Head的缩写)，
-1、是一种强制隔离节点功能。
-2、例如：
-（1）切断目标电源的智能电源开关，
-（2）切断目标对本地网络的访问的智能网络交换机。  
-3、Pacemaker 可以将隔离的设备作为一种特殊的资源类别。  
-4、没有隔离措施（Fencing），集群可能无法从某些故障节点中安全恢复，造成整个集群都不可用。
-```
+> [!note]
+> 隔离（Fencing）[^13]，也被称为STONITH (Shoot The Other Node In The Head的缩写)，
+> 1、是一种强制隔离节点功能。
+> 2、例如：
+> （1）切断目标电源的智能电源开关，
+> （2）切断目标对本地网络的访问的智能网络交换机。  
+> 3、Pacemaker 可以将隔离的设备作为一种特殊的资源类别。  
+> 4、没有隔离措施（Fencing），集群可能无法从某些故障节点中安全恢复，造成整个集群都不可用。
 
 3、【crmsh】配置Pacemaker 管理的资源的工具，主要是以下功能：
 （1）集群的VIP卸载和加载。
@@ -154,18 +153,17 @@ Pacemaker 只通过一个节点发布集群的决策和操作，如果当前节�
 对远程节点不需要安装完整的群集堆栈，因为它们只运行 `pacemaker_remote` 服务。该服务充当代理，可让“常规”群集节点上的群集堆栈连接到该服务。因此，运行 `pacemaker_remote` 服务的节点可作为远程节点有效集成到群集中。
 
 
-```ad-note
-Pacemaker 守护进程在2.0 版本中进行了重命名。你可以找到对旧名称的使用。
-
-| **old name**          | **New name**           |
-| ----------------- | ------------------ |
-| attrd             | pacemaker-attrd    |
-| cib               | pacemaker-based    |
-| crmd              | pacemaker-controld |
-| lrmd              |                    |
-| stonithd          | pacemaker-fenced   |
-| pacemaker_remoted | pacemaker-remoted  | 
-```
+> [!note]
+> Pacemaker 守护进程在2.0 版本中进行了重命名。你可以找到对旧名称的使用。
+> 
+> | **old name**          | **New name**           |
+> | ----------------- | ------------------ |
+> | attrd             | pacemaker-attrd    |
+> | cib               | pacemaker-based    |
+> | crmd              | pacemaker-controld |
+> | lrmd              |                    |
+> | stonithd          | pacemaker-fenced   |
+> | pacemaker_remoted | pacemaker-remoted  | 
 
 ### pacemaker 支持的集群架构
 Pacemaker 支持很多集群架构，包括主备模式（非共享存储），主备模式（共享存储），RAC（多主模式）。
