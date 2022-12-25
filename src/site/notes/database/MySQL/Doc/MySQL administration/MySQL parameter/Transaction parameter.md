@@ -60,9 +60,8 @@ root@localhost:employees 05:24:36> show variables like '%comple%';
 
 
 
-```ad-note
-当参数completion_type的值为1时，commit work等同于commit and chain，表示马上自动开启一个相同隔离级别的事务
-```
+> [!note]
+> 当参数completion_type的值为1时，commit work等同于commit and chain，表示马上自动开启一个相同隔离级别的事务
 
 
 ## 超时参数
