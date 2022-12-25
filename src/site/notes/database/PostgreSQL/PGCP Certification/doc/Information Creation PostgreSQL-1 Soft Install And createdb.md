@@ -77,9 +77,8 @@ root>
 yum install gcc gcc-c++ zlib-devel readline-devel wget psmisc perl-ExtUtils-Embed pam-devel libxml2-devel libxslt-devel openldap-devel python39-devel python2-devel openssl-devel cmake wget -y 
 ```
 
-```ad-warning
-这里用python2 还是python3  ，官网两种都支持。所以都安装。
-```
+> [!warning]
+> 这里用python2 还是python3  ，官网两种都支持。所以都安装。
 快照为：DB_INSTALL_ENV
 
 ---
@@ -131,10 +130,9 @@ gmake check-world  -j 20
 gmake install
 ```
 
-```ad-note
-gmake world包含了所有文档和所有contirb 。
-
-```
+> [!note]
+> gmake world包含了所有文档和所有contirb 。
+> 
 #### 创建数据库集簇
 ##### 创建目录
 ```bash
@@ -147,9 +145,8 @@ postgres>
 initdb -D $PGDATA -W --data-checksums  
 ```
 
-```ad-note
-复制时需要 data-cecksums 支持块校验。
-```
+> [!note]
+> 复制时需要 data-cecksums 支持块校验。
 ##### 启动数据库集簇
 ```bash
 postgres>
