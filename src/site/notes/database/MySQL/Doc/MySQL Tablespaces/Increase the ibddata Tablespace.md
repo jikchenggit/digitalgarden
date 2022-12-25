@@ -21,9 +21,8 @@ innodb_data_home_dir =
 innodb_data_file_path = /ibdata/ibdata1:988M;/disk2/ibdata2:50M:autoextend
 ```
 
-```ad-warning
-注意增大系统表空间不能使用现有的表空间,否则会报错.
-```
+> [!warning]
+> 注意增大系统表空间不能使用现有的表空间,否则会报错.
 ## 减小InnoDB 系统表空间大小
 1. 使用`mysqldump` 备份MySQL 模式下的所有innodb 表
 ```bash
@@ -35,6 +34,5 @@ SELECT TABLE_NAME from INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='mysql' and 
 5. 配置新的system 表空间.
 6. 重启数据库.
 7. 导入数据.
-```ad-note
-为了更好的发挥性能可以直接使用裸设备.
-```
+> [!note]
+> 为了更好的发挥性能可以直接使用裸设备.
