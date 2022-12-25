@@ -42,9 +42,8 @@ EOF
 ```
 
 #### 安装数据库
-```ad-warning
-分别在每台机器上安装kingbase 单机版。自动生成/opt/KingbaseHA。
-```
+> [!warning]
+> 分别在每台机器上安装kingbase 单机版。自动生成/opt/KingbaseHA。
 [[database/Kingbase/Doc/Initd/kingbaes 数据库安装和启停\|kingbaes 数据库安装和启停]]
 
 #### 配置NTP时间同步
@@ -114,9 +113,8 @@ EOF
 ```
 
 #### 安装数据库
-```ad-warning
-分别在每台机器上安装kingbase 单机版。自动生成/opt/KingbaseHA。
-```
+> [!warning]
+> 分别在每台机器上安装kingbase 单机版。自动生成/opt/KingbaseHA。
 [[database/Kingbase/Doc/Initd/kingbaes 数据库安装和启停\|kingbaes 数据库安装和启停]]
 
 #### 配置NTP时间同步
@@ -221,10 +219,9 @@ do  mkfs.xfs -f /dev/sd$i
 done
 ```
 
-```ad-warning
-注意不要使用LVM ，磁盘卷组信息。LVM 卷组信息其他节点无法识别。
-
-```
+> [!warning]
+> 注意不要使用LVM ，磁盘卷组信息。LVM 卷组信息其他节点无法识别。
+> 
 ---
 
 [[database/Kingbase/Doc/Cluster manager/RAC/Doc/kingbaseHA Soft Get\|kingbaseHA Soft Get]]
