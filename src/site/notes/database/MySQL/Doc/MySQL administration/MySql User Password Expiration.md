@@ -55,9 +55,8 @@ alter user dsg@'%' identified by '1234';
 show databases
 ```
 
-```ad-warning
-就能够看到数据库信息了.
-```
+> [!warning]
+> 就能够看到数据库信息了.
 
 ##  设置全局用户用户过期:
 ```
