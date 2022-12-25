@@ -14,12 +14,11 @@
 -	[官方网站] http://dev.mysql.com/downloads/mirrors.html.
 -	进入后可以选择对应的版本
 
-```ad-warning
-tar.gz tar.xz 为二进制安装。
-RPM 为rpm 安装包。
-deb 为 deband linux 安装包.
-PKG 为mac 文件安装包。
-```
+> [!warning]
+> tar.gz tar.xz 为二进制安装。
+> RPM 为rpm 安装包。
+> deb 为 deband linux 安装包.
+> PKG 为mac 文件安装包。
 
 #### 下载yum 源网站包（社区版）
 [yum.repo.完整镜像包](https://dev.mysql.com/downloads/repo/yum/)
@@ -42,9 +41,8 @@ shell> rpm --checksig MySQL-server-8.0.13-0.linux_glibc2.5.i386.rpm
 MySQL-server-8.0.13-0.linux_glibc2.5.i386.rpm: md5 gpg OK
 ```
 ##  二进制部署
-```ad-warning
-使用二进制安装这种模式不同于yum 安装自动分析相关依赖包。必须首先移除mariadb或者以前的安装过mysql 的配置文件。例如/etc/my.conf.
-```
+> [!warning]
+> 使用二进制安装这种模式不同于yum 安装自动分析相关依赖包。必须首先移除mariadb或者以前的安装过mysql 的配置文件。例如/etc/my.conf.
 ### OS 环境准备
 ####  卸载mariadb
 ```bash
@@ -98,19 +96,18 @@ shell> bin/mysqld --initialize-insecure --user=mysql
 ```
 
 
-```ad-warning
-两种初始化方式第一种必须强制使用密码登录。第二种方式可以使用跳过密码
-`
-shell> mysql -u root --skip-password
-`
-然后更改对应密码
-`
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
-`
-在mysql 8.0 默认加密的密码已经改了。现在默认使用caching_sha2_password 加密方式。
-如果还需使用默认的mysql_native_password 加密方式的话使用默认 模式。
-初始化的时候，默认路径为/usr/local/mysql
-```
+> [!warning]
+> 两种初始化方式第一种必须强制使用密码登录。第二种方式可以使用跳过密码
+> `
+> shell> mysql -u root --skip-password
+> `
+> 然后更改对应密码
+> `
+> mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_password';
+> `
+> 在mysql 8.0 默认加密的密码已经改了。现在默认使用caching_sha2_password 加密方式。
+> 如果还需使用默认的mysql_native_password 加密方式的话使用默认 模式。
+> 初始化的时候，默认路径为/usr/local/mysql
 
 #### 使用命令行指定数据库集簇目录
 - 1. 如果要改变安装目录使用以下目录：
@@ -234,10 +231,9 @@ yum install mysql-community-server
 ##  使用RPM 包安装
 
 
-```ad-warning
-由于企业版只提供二进制和RPM 包方式。。不提供YUM 安装方式。
-以下是各个RPM 包的含义：
-```
+> [!warning]
+> 由于企业版只提供二进制和RPM 包方式。。不提供YUM 安装方式。
+> 以下是各个RPM 包的含义：
 
 | **Package Name** | **Summary** |
 | --- | --- |
@@ -333,9 +329,8 @@ systemctl  status mysql
 ```
 #### 开机自启动
 
-```ad-warning
-> 由于使用二进制安装,则需要配置chkconfig 。RPM 包不需要配置此选项。
-```
+> [!warning]
+> > 由于使用二进制安装,则需要配置chkconfig 。RPM 包不需要配置此选项。
 
 
 ```bash
@@ -526,9 +521,8 @@ mysqlshow mysql
 mysql -e "SELECT User, Host, plugin FROM mysql.user" mysql
 ```
 
-```ad-note
-以上命令成功执行后则mysql 数据正常。
-```
+> [!note]
+> 以上命令成功执行后则mysql 数据正常。
 
 ### 忘记root 密码
 * 方法1：
