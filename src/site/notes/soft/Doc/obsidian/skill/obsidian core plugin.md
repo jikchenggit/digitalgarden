@@ -16,10 +16,9 @@
 
 ![-6d059c29c67c61f6.png](https://www.aming.work:8084/images/2022/10/08/-6d059c29c67c61f6.png)
 ![bdfcbf99e7c259211cea42cb9dc613aa.png](https://www.aming.work:8084/images/2022/10/08/bdfcbf99e7c259211cea42cb9dc613aa.png)
-```ad-warning
-
-此插件为核心功能。
-```
+> [!warning]
+> 
+> 此插件为核心功能。
 ## 需要了解核心功能
 
 [00:55](https://www.bilibili.com/video/BV1Fq4y1K71h/?spm_id_from=333.999.0.0#t=55.85164)
@@ -30,11 +29,10 @@
 2. 方式2：CTRL + T
 
 ## 现目前提供的模板为
-```ad-note
-1. annotation PDF 标注语法
-2. Frontmatter  标签模板
-3. iframe 嵌入网页模板
-```
+> [!note]
+> 1. annotation PDF 标注语法
+> 2. Frontmatter  标签模板
+> 3. iframe 嵌入网页模板
 
 
 [05:29](https://www.bilibili.com/video/BV1Fq4y1K71h/?spm_id_from=333.999.0.0#t=329.109044)
