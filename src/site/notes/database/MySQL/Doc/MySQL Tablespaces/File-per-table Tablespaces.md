@@ -13,10 +13,9 @@ InnoDB 默认使用file-per-table 配置,如果禁用`innodb_file_per_table` 会
 [mysqld]
 innodb_file_per_table=ON
 ```
-```ad-warning
-`innodb_file_per_table` 在MySQL 5.6 以前的版本是默认启用的.
-
-```
+> [!warning]
+> `innodb_file_per_table` 在MySQL 5.6 以前的版本是默认启用的.
+> 
 
 
 # file-per-table 的优势
