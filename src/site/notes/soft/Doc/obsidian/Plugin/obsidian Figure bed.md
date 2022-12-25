@@ -10,10 +10,9 @@
 ### 下载相关安装包
 1. 下载PicGo
 [Releases · Molunerfinn/PicGo (github.com)](https://github.com/Molunerfinn/PicGo/releases)
-```ad-warning
-必须使用正式版2.3.0 ,否则网络不稳定。 无法上传图片。
-
-```
+> [!warning]
+> 必须使用正式版2.3.0 ,否则网络不稳定。 无法上传图片。
+> 
 ### 修改默认上传图片的位置
 ## 修改 Chevereto 上传用户
 
