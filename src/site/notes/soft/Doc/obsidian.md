@@ -24,6 +24,7 @@
 [[soft/Doc/obsidian/Plugin/Charts Plugin\|Charts Plugin]]
 [[soft/Doc/obsidian/skill/Obsidian Link videos\|obsidian 链接库外视频]]
 [[soft/Doc/obsidian/skill/Media Extended Plugin\|Media Extended]]
+[[soft/Doc/obsidian/Plugin/Easy Typing Plugin\|Easy Typing Plugin]]
 ## OB 实战
 
 [[soft/Doc/obsidian/skill/如何使用OB 把大段文章分段\|如何使用OB 把大段文章分段]]
