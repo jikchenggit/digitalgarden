@@ -15,7 +15,7 @@
 [[soft/Doc/Ansible/ansible\|ansible]]
 [[soft/Doc/JDK\|JDK]]
 [[soft/Doc/pandoc\|pandoc]]
-[[soft/Doc/tomcat\|tomcat]]
+[[soft/Doc/Tomcat\|Tomcat]]
 [[soft/Doc/vnote\|vnote]]
 [[soft/Doc/visualstudio\|visualstudio]]
 [[soft/Doc/xmind\|xmind]]
@@ -41,3 +41,4 @@
 [[NAS/Doc/gitbook/gitbook\|gitbook]]
 [[soft/Doc/office 365\|office 365]]
 [[soft/Doc/DbVisualizer\|DbVisualizer]]
+[[soft/Doc/Qalculate\|Qalculate]]
